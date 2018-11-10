@@ -1,5 +1,6 @@
 # Hipopoteca 🦛
 
+[![GitHub release](https://img.shields.io/github/release/RDCH106/hipopoteca.svg)](https://github.com/RDCH106/hipopoteca/releases)
 [![GitHub](https://img.shields.io/github/license/RDCH106/hipopoteca.svg)](https://github.com/RDCH106/hipopoteca/blob/master/LICENSE)
 
 Cálculo de hipoteca mediante el sistema francés
