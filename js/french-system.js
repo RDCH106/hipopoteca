@@ -1,8 +1,8 @@
 
-function monthlyInterest(quota, precision=8){
-    return (quota/12).toPrecision(precision);
+function monthlyInterest(quota, decimals=3){
+    return (quota/12).toFixed(precision);
 }
 
-function numberOfQuotes(term, precision=8){
-    return (term*12).toPrecision(precision);
+function numberOfQuotes(term, decimals=3){
+    return (term*12).toFixed(precision);
 }
