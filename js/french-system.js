@@ -8,5 +8,9 @@ function numberOfQuotes(term, decimals=3){
 }
 
 function totalToPay(quota, numQuotas, decimals=3){
-    return (quota*numQuotas).toFixed(decimals)
+    return (quota*numQuotas).toFixed(decimals);
+}
+
+function interest(totalToPay, capital, decimals=3){
+    return (capital-totalToPay).toFixed(decimals);
 }
