@@ -5,7 +5,7 @@
  * - A Guide to the PMT, FV, IPMT and PPMT Functions by Kevin (aka MWVisa1)
  */
 
-var ExcelFormulas = {
+export var ExcelFormulas = {
 
 	PVIF: function(rate, nper) {
 		return Math.pow(1 + rate, nper);
