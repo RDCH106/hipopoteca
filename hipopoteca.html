@@ -43,7 +43,7 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="capital">Capital</label>  
                           <div class="col-md-5">
-                          <input id="capital" name="capital" type="text" placeholder="" class="form-control input-md" required="">
+                          <input id="capital" name="capital" type="number" placeholder="" class="form-control input-md" required="" min="0" step="0.001" data-bind="value:capital">
                           <span class="help-block">Cantidad a pedir para la hipoteca</span>  
                           </div>
                         </div>
@@ -52,8 +52,8 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="term">Plazo</label>  
                           <div class="col-md-5">
-                          <input id="term" name="term" type="text" placeholder="" class="form-control input-md" required="">
-                          <span class="help-block">Plazo en años</span>  
+                          <input id="term" name="term" type="number" placeholder="" class="form-control input-md" required="" min="0" step="1" data-bind="value:term">
+                          <span class="help-block">Plazo en aÃ±os</span>  
                           </div>
                         </div>
 
@@ -72,9 +72,17 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="fixedType">Tipo fijo</label>  
                           <div class="col-md-5">
-                          <input id="fixedType" name="fixedType" type="text" placeholder="" class="form-control input-md" required="">
-                          <span class="help-block">Porcentaje de interés</span>  
+                          <input id="fixedType" name="fixedType" type="number" placeholder="" class="form-control input-md" required="" min="0" step="0.001" data-bind="value:capital">
+                          <span class="help-block">Porcentaje de interÃ©s</span>  
                           </div>
+                        </div>
+                        
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="convert"></label>
+                            <div class="col-md-4">
+                            <button type="submit" id="calculate" name="calculate" class="btn btn-primary" onclick="calulateInput()">Calcular</button>
+                            </div>
                         </div>
 
                     </fieldset>
