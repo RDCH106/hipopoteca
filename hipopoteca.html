@@ -33,7 +33,53 @@
         <div class="container">
             <br>
             <div>
-            <!-- TO-DO -->
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Datos necesarios</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="capital">Capital</label>  
+                          <div class="col-md-5">
+                          <input id="capital" name="capital" type="text" placeholder="" class="form-control input-md" required="">
+                          <span class="help-block">Cantidad a pedir para la hipoteca</span>  
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="term">Plazo</label>  
+                          <div class="col-md-5">
+                          <input id="term" name="term" type="text" placeholder="" class="form-control input-md" required="">
+                          <span class="help-block">Plazo en a�os</span>  
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="loanType">Tipo de Hipoteca</label>
+                          <div class="col-md-5">
+                            <select id="loanType" name="loanType" class="form-control">
+                              <option value="1">Fija</option>
+                              <option value="2">Variable</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="fixedType">Tipo fijo</label>  
+                          <div class="col-md-5">
+                          <input id="fixedType" name="fixedType" type="text" placeholder="" class="form-control input-md" required="">
+                          <span class="help-block">Porcentaje de inter�s</span>  
+                          </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
             </div>
             <br>
         </div>
