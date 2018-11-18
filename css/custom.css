@@ -36,3 +36,14 @@ table.dataTable thead .sorting_desc:after {
     margin: 10px;
     margin-top: 45px;
 }
+
+.float{
+    float: left;
+}
+
+.box{
+    background-color:#eee;
+    border: 1px solid #888;
+    border-radius:3px;
+    padding: 7px;
+}
