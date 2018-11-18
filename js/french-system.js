@@ -1,4 +1,4 @@
-import {ExcelFormulas} from './excel_formulas.js'
+import {ExcelFormulas} from './excel_formulas.js';
 
 function monthlyInterest(interest, decimals=3){
     return (quota/12).toFixed(decimals);
