@@ -6,4 +6,6 @@ function calculateInput(){
     document.getElementById("monthlyInterestValue").innerHTML = monthlyInterestValue;
     var numberOfQuotesValue = numberOfQuotes(document.getElementById('term').value);
     document.getElementById("numberOfQuotesValue").innerHTML = numberOfQuotesValue;
+    var quotaValue = quota(monthlyInterestValue, numberOfQuotesValue, capitalValue, 0, 1);
+    document.getElementById("quotaValue").innerHTML = quotaValue;
 }
