@@ -5,7 +5,7 @@ function monthlyInterest(interest, decimals=3){
 }
 
 function quota(monthlyInterest, numberOfQuotes, capital, decimals=3){
-    return ExcelFormulas.PMT(monthlyInterest, numberOfQuotes, -capital).toFixed(decimals);
+    return ExcelFormulas.PMT(monthlyInterest/100, numberOfQuotes, -capital).toFixed(decimals);
 }
 
 function numberOfQuotes(term, decimals=0){
