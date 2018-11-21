@@ -8,7 +8,7 @@ function quota(monthlyInterest, numberOfQuotes, capital, decimals=3){
     return ExcelFormulas.PMT(monthlyInterest, numberOfQuotes, capital);
 }
 
-function numberOfQuotes(term, decimals=3){
+function numberOfQuotes(term, decimals=0){
     return (term*12).toFixed(decimals);
 }
 
