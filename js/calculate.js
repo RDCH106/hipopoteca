@@ -8,6 +8,6 @@ function calculateInput(){
     document.getElementById("numberOfQuotesValue").innerHTML = numberOfQuotesValue;
     var quotaValue = quota(monthlyInterestValue, numberOfQuotesValue, capitalValue);
     document.getElementById("quotaValue").innerHTML = quotaValue;
-    var totalToPayValue = totalToPay(quotaValue, numberOfQuotesValue, 0);
+    var totalToPayValue = totalToPay(quotaValue, numberOfQuotesValue);
     document.getElementById("totalToPayValue").innerHTML = totalToPayValue;
 }
