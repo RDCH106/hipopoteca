@@ -11,5 +11,5 @@ function calculateInput(){
     var totalToPayValue = totalToPay(quotaValue, numberOfQuotesValue, 2);
     document.getElementById("totalToPayValue").innerHTML = totalToPayValue;
     var interestValue = interest(totalToPayValue, capitalValue, 2);
-    document.getElementById("interestValue").innerHTML = interestValue;
+    document.getElementById("interestValue").innerHTML = format("#.###,###", interestValue);
 }
