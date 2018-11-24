@@ -10,4 +10,6 @@ function calculateInput(){
     document.getElementById("quotaValue").innerHTML = quotaValue;
     var totalToPayValue = totalToPay(quotaValue, numberOfQuotesValue, 2);
     document.getElementById("totalToPayValue").innerHTML = totalToPayValue;
+    var interestValue = interest(totalToPayValue, capitalValue, 2);
+    document.getElementById("interestValue").innerHTML = interestValue;
 }
