@@ -17,7 +17,7 @@ function totalToPay(quota, numQuotas, decimals=3){
 }
 
 function interest(totalToPay, capital, decimals=3){
-    return (capital-totalToPay).toFixed(decimals);
+    return (totalToPay-capital).toFixed(decimals);
 }
 
 /* export const default_decimals = 3;
