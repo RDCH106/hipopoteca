@@ -14,3 +14,9 @@ function calculateInput(){
     var interestValue = interest(totalToPayValue, capitalValue, 2);
     document.getElementById("interestValue").innerHTML = format("##0.##0,#0", interestValue);
 }
+
+// On LOAD events
+$(document).ready(function() {
+    $("#form-result").hide();
+    $("#form-input").onsubmit = function() { return false; };  // Disable on submit reload
+});
