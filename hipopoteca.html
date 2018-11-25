@@ -36,7 +36,7 @@
         <div class="container">
             <br>
             <div id="form-corpus">
-                <form class="form-horizontal">
+                <form id="form-input" class="form-horizontal">
                     <fieldset>
 
                         <!-- Form Name -->
@@ -84,7 +84,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="convert"></label>
                             <div class="col-md-4">
-                            <button type="button" id="calculate" name="calculate" class="btn btn-primary" onclick="calculateInput()">Calcular</button>
+                            <button type="submit" id="calculate" name="calculate" class="btn btn-primary" onclick="calculateInput()">Calcular</button>
                             </div>
                         </div>
 
@@ -139,6 +139,7 @@
             
             <script type="text/javascript" language="javascript">
                 document.getElementById("form-result").style.display = "none";
+                document.getElementById('form-input').onsubmit = function() { return false; };  // Disable on submit reload
             </script>
             
             <br>
