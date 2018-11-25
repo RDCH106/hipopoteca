@@ -1,6 +1,7 @@
 //import {FrenchSystem} from './french-system.js';
 
 function calculateInput(){
+    document.getElementById("form-result").style.display = "initial";
     var capitalValue = document.getElementById('capital').value;
     var monthlyInterestValue = monthlyInterest(document.getElementById('fixedType').value);
     document.getElementById("monthlyInterestValue").innerHTML = monthlyInterestValue;
