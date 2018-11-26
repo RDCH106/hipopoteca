@@ -20,6 +20,7 @@ function calculateInput(){
 
 // On LOAD events
 function init(){
-    document.getElementById("form-result").style.display = "none";
+    $("#form-result").hide();
+    //document.getElementById("form-result").style.display = "none";
     document.getElementById('form-input').onsubmit = function() { return false; };  // Disable on submit reload
 }
