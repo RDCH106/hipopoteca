@@ -16,7 +16,7 @@ function calculateInput(){
 }
 
 // On LOAD events
-$(document).ready(function() {
-    $("#form-result").hide();
-    $("#form-input").onsubmit = function() { return false; };  // Disable on submit reload
-});
+function init(){
+    document.getElementById("form-result").style.display = "none";
+    document.getElementById('form-input').onsubmit = function() { return false; };  // Disable on submit reload
+}
